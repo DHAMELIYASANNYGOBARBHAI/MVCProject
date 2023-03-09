@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Help Page!</title>
+</head>
+<body>
+<h1>Ram</h1>
+<h1 th:text="${name}"></h1>
+<h1 th:text="${number}"></h1>
+<h1>Current Date and Time</h1>
+<p>Local date: <span th:text="${#temporals.format(time, 'dd/MM/yyyy')}"></span></p>
+<p>Local time: <span th:text="${#temporals.format(time, 'HH:mm:ss')}"></span></p>
+<hr>
+<ul>
+    <li th:each="god: ${gods}">
+        <h1 th:text="${god}"></h1>
+    </li>
+</ul>
+
+</body>
+</html>

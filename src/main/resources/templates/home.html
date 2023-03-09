@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello, world!</title>
+</head>
+<body>
+<h1>Ram</h1>
+<h1 th:text="'Hello, world!'"></h1>
+<h1 th:text="${key}"></h1>
+<h1 th:text="${id}"></h1>
+<h1><li th:each="friend: ${friends}" th:text="${friend}"></li></h1>
+</body>
+</html>
